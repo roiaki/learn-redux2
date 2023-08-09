@@ -38,7 +38,12 @@ const CartContainer = () => {
             合計<span>{total}円</span>
           </h4>
         </div>
-        <button className="btn clear-button" onClick={() => dispatch(clearCart())}>全削除</button>
+        <button
+          className="btn clear-button"
+          onClick={() => dispatch(clearCart())}
+        >
+          全削除
+        </button>
     
       </footer>
     </section>
