@@ -13,6 +13,7 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
+    //アクションクリエイター
     clearCart:(state) => {
       // state.cartItems = [];
       return { cartItems: [], amount: 0, total: 0 };
@@ -47,5 +48,5 @@ const cartSlice = createSlice({
   },
 });
 
-export const { clearCart, removeItem, increase, decrease } = cartSlice.actions;
+export const { clearCart, removeItem, increase, decrease, calculateTotals } = cartSlice.actions;
 export default cartSlice.reducer;

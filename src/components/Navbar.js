@@ -4,9 +4,7 @@ import { CartIcon } from "../HeroIcons";
 
 const Navbar = () => {
   const {amount, total } = useSelector((store) => store.cart);
-  // console.log(amount, total);
-
-
+  //  console.log(amount, total);
   return (
     <nav>
       <div className="nav-center">
